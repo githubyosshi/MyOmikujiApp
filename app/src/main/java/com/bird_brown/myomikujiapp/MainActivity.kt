@@ -2,6 +2,7 @@ package com.bird_brown.myomikujiapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 //import android.R
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         getOmikujiButton.setOnClickListener {
             // Code here executes on main thread after user presses button
+            Log.v("MainActivity", "Button Clicked")
         }
     }
 }
