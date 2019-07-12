@@ -6,6 +6,7 @@ import android.util.Log
 //import android.R
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -17,7 +18,9 @@ class MainActivity : AppCompatActivity() {
 
         getOmikujiButton.setOnClickListener {
             // Code here executes on main thread after user presses button
-            Log.v("MainActivity", "Button Clicked")
+//            Log.v("MainActivity", "Button Clicked")
+            val n = Random().nextInt(3)
+            resultTextView.text = n.toString()
         }
     }
 }
