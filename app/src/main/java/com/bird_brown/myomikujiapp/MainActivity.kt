@@ -1,5 +1,6 @@
 package com.bird_brown.myomikujiapp
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -27,6 +28,14 @@ class MainActivity : AppCompatActivity() {
 
 //            resultTextView.text = n.toString()
             resultTextView.text = results.get(n)
+
+            if (n == 0) {
+//                resultTextView.setTextColor(Color.RED)
+//                resultTextView.setTextColor(Color.parseColor("#ff0000"))
+                resultTextView.setTextColor(Color.argb(255, 255, 0, 0))
+            } else {
+                resultTextView.setTextColor(Color.parseColor("#808080"))
+            }
 
         }
     }
